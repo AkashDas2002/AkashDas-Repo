@@ -1,3 +1,15 @@
+public class MakePi {
+
+    public static void main(String[] commandLine) {
+	System.out.println(collisionCount(5,50000,10));
+    }
+
+    public static int collisionCount(double mass1, double mass2, double vel) {
+	int count = 0;
+	double velocity1 = 0;
+	double velocity2 = vel;
+
+	while (!(velocity2 < 0 && velocity2 < velocity1 && velocity1 <= 0)) {
 	
 	    if (velocity2 >= 0) {
 		if (velocity1 <= 0) {
