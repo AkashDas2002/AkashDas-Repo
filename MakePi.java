@@ -1,7 +1,8 @@
 public class MakePi {
 
     public static void main(String[] commandLine) {
-	System.out.println(collisionCount(5,50000,10));
+	double mass = Double.parseDouble(commandLine[0]);
+	System.out.println(collisionCount(1,mass,10));
     }
 
     public static int collisionCount(double mass1, double mass2, double vel) {
